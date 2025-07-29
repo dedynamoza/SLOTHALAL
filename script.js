@@ -76,13 +76,13 @@ function spin() {
         const reward = win * 10;
         balance += reward;
         balanceDisplay.textContent = balance;
-        resultDisplay.textContent = `JACKPOT! Menang besar! +${reward} koin 🎊🎉`;
+        resultDisplay.textContent = `JACKPOT! Lumayan buat bayar pinjol! +${reward} koin 🎊🎉`;
         jackpotSound.currentTime = 0;
         jackpotSound.play();
         jackpotBanner.textContent = `🎉 JACKPOT! +${reward} KOIN 🎉`;
         jackpotBanner.style.display = "block";
       } else {
-        resultDisplay.textContent = `Tidak menang. Coba lagi! 😢`;
+        resultDisplay.textContent = `Aduhhh Kalah Goblok!!. Coba lagi deh! 😢`;
       }
     }
   }, 50);
