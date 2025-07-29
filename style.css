@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #6115a3, #290c4d);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .slot-container {
+    background: radial-gradient(#320438, #120212);
+    border-radius: 40px;
+    padding: 60px 40px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 60px rgba(255, 215, 0, 0.4);
+    text-align: center;
+    border: 8px solid gold;
+    width: 90vw;
+    max-width: 1200px;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 48px;
+    text-shadow: 0 0 15px gold;
+    margin-bottom: 30px;
+  }
+  
+  .balance {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  
+  .reels {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .reel {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(#ff0000, #a00000);
+    border: 6px solid yellow;
+    border-radius: 20px;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 0 25px red;
+  }
+  
+  .spin-button {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    border: none;
+    padding: 20px 60px;
+    color: white;
+    font-size: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .spin-button:hover {
+    transform: scale(1.08);
+  }
+  
+  .result {
+    margin-top: 25px;
+    font-size: 26px;
+    min-height: 30px;
+  }
+  
+  .jackpot-banner {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: gold;
+    color: red;
+    font-size: 48px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px yellow;
+    display: none;
+    animation: pop 1s ease;
+  }
+  
+  @keyframes pop {
+    0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  }
+  

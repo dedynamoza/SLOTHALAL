@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slot Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slot-container">
+    <h1>🎰 SLOT JACKPOT</h1>
+    <div class="balance">Saldo: <span id="balance">200</span> koin</div>
+    <div class="reels">
+      <div class="reel" id="reel1">🍒</div>
+      <div class="reel" id="reel2">🍋</div>
+      <div class="reel" id="reel3">🔔</div>
+    </div>
+    <button class="spin-button" onclick="spin()">SPIN</button>
+    <div class="result" id="result"></div>
+    <div class="jackpot-banner" id="jackpotBanner"></div>
+  </div>
+
+  <audio id="spinSound" src="https://assets.mixkit.co/sfx/preview/mixkit-slot-machine-spinning-1939.mp3"></audio>
+  <audio id="jackpotSound" src="https://assets.mixkit.co/sfx/preview/mixkit-winning-notification-2018.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
