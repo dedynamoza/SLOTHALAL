@@ -8,7 +8,7 @@ const payouts = {
   "⭐⭐⭐": 75
 };
 
-let balance = 200;
+let balance = 130;
 let spinCount = 0;
 
 function spin() {
@@ -23,7 +23,7 @@ function spin() {
   spinSound.play();
 
   if (balance < 10) {
-    resultDisplay.textContent = "Saldo tidak cukup!";
+    resultDisplay.textContent = "Saldo Abis woyy, refresh aja!";
     return;
   }
 
@@ -82,7 +82,7 @@ function spin() {
         jackpotBanner.textContent = `🎉 JACKPOT! +${reward} KOIN 🎉`;
         jackpotBanner.style.display = "block";
       } else {
-        resultDisplay.textContent = `Aduhhh Kalah Goblok!!. Coba lagi deh! 😢`;
+        resultDisplay.textContent = `Aduhhh Kalah Kampang!!. Coba lagi deh! 😢`;
       }
     }
   }, 50);
